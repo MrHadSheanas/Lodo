@@ -1,6 +1,42 @@
 
     
-@media (max-width:1000px) {
+
+@media (max-width:1100px){
+         #img-test{
+        width: 50px;
+        height:50px;
+        left: 47%;
+    }
+    #sad ,#good{
+        width: 65px;
+        height: 65px;
+    }
+    #div-one,#div-two{
+        width: 80px;
+        height: 10vh;
+        
+    }
+    p{
+        font-size: 0.4em;
+    }
+    .btn,.btn1{
+        width:13%;
+        height:5vh;
+        font-size: 1em;
+        font-weight: 900;
+        top: 75vh;
+
+    }
+    #clicking{
+        width: 20%;
+    }
+    .star1 , .star21{
+        padding: 3px;
+    }
+
+}
+
+@media (max-width:700px) {
     #img-test{
         width: 30px;
         height: 30px;
@@ -19,13 +55,21 @@
         font-size: 0.4em;
     }
     .btn,.btn1{
-        width:10%;
-        height:5vh;
-        font-size: 0.6em;
+        width: 13%;
+        height:6vh;
+        font-size: 0.7em;
+        font-weight: 900;
+        top: 75vh;
 
+    }
+    #clicking{
+        width: 20%;
     }
     .star1 , .star21{
         padding: 3px;
     }
+    #div-big{
+        width: 90%;
+    }
 
-}
+} 
