@@ -225,3 +225,255 @@ span{
     top: 50vh;
     left:25%;
 }
+
+
+
+
+/* From Uiverse.io by mobinkakei */ 
+.loader {
+  width: 54px;
+  height: 54px;
+  position:absolute;
+  top: 65vh;
+  border-radius: 4px;
+  background-color: #fff;
+  background-image: radial-gradient(circle 5px, #19191a 100%, transparent 0),
+    radial-gradient(circle 5px, #19191a 100%, transparent 0),
+    radial-gradient(circle 5px, #19191a 100%, transparent 0),
+    radial-gradient(circle 5px, #19191a 100%, transparent 0),
+    radial-gradient(circle 5px, #19191a 100%, transparent 0),
+    radial-gradient(circle 5px, #19191a 100%, transparent 0);
+  background-repeat: no-repeat;
+  animation: move 4s linear infinite, rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0%,
+  20% {
+    transform: rotate(0deg);
+  }
+  30%,
+  40% {
+    transform: rotate(90deg);
+  }
+  50%,
+  60% {
+    transform: rotate(180deg);
+  }
+  70%,
+  80% {
+    transform: rotate(270deg);
+  }
+  90%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes move {
+  0%,
+  9% {
+    background-position: -12px -15px, -12px 0px, -12px 15px, 12px -15px,
+      12px 0px, 12px 15px;
+  }
+  10%,
+  25% {
+    background-position: 0px -15px, -12px 0px, -12px 15px, 34px -15px, 12px 0px,
+      12px 15px;
+  }
+  30%,
+  45% {
+    background-position: 0px -34px, -12px -10px, -12px 12px, 34px -15px,
+      12px -10px, 12px 12px;
+  }
+  50%,
+  65% {
+    background-position: 0px -34px, -12px -34px, -12px 12px, 34px -12px,
+      0px -10px, 12px 12px;
+  }
+  70%,
+  85% {
+    background-position: 0px -34px, -12px -34px, 0px 12px, 34px -12px, 0px -10px,
+      34px 12px;
+  }
+  90%,
+  100% {
+    background-position: 0px -34px, -12px -34px, 0px 0px, 34px -12px, 0px 0px,
+      34px 12px;
+  }
+}
+
+
+
+
+.div-1{
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/game-8738959_1920.png');
+    background-size: cover;
+}
+
+
+
+/* From Uiverse.io by jeremyssocial */ 
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10em;
+  perspective: 800px;
+  
+}
+
+.loader-cube {
+  position: relative;
+  width: 5em;
+  height: 5em;
+  transform-style: preserve-3d;
+  animation: rotateCube 2s infinite linear;
+}
+
+.loader-side {
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  background-color:rgba(0, 0, 0, 0.347); /* Custom property for theming */
+  border: 0.1em solid #fff; /* Relative sizing for border */
+  box-shadow: 2px 2px 100px  white;
+}
+
+.front {
+  transform: translateZ(2.5em);
+}
+.back {
+  transform: rotateY(180deg) translateZ(2.5em);
+}
+.right {
+  transform: rotateY(90deg) translateZ(2.5em);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(2.5em);
+}
+.top {
+  transform: rotateX(90deg) translateZ(2.5em);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(2.5em);
+}
+
+/* Keyframes for continuous rotation */
+@keyframes rotateCube {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+/* Interactive states using pseudo-classes */
+.loader-side:hover {
+  background-color:transparent; /* Darker shade on hover */
+}
+
+.loader-side:focus {
+  border: 0.1em solid #999; /* Different border color on focus */
+}
+
+.loader-side:active {
+  opacity: 0.8; /* Slight transparency on active */
+}
+
+
+
+
+
+
+
+
+.btn-fanil{
+background-color: transparent;
+border: 0.2px solid white;
+position: absolute;
+top: 74vh;
+left: 40%;
+width: 20%;
+
+
+
+}
+.main{
+  display: none;
+  
+}
+#div-big{
+  box-shadow: 10px 10px 20px 10px rgb(94, 107, 110);
+  border: 0px;
+}
+#div-one, #div-two{
+ 
+  transition: all 1.2s;
+  display: none;
+}
+#div-one:hover, #div-two:hover{
+  transform: scale(1.1);
+    background-color: rgb(122, 6, 184);
+    color: white;
+    cursor: pointer;
+
+
+  }
+  #sad ,#good{
+    display: none;
+
+  }
+  #bagest-div{
+    transition: all 3s;
+    
+  }
+
+#bagest-div{
+  transition: all 4s;
+}
+.star1{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 80vh;
+  left:17%;
+}
+.star2{
+  left: 19%;
+}
+.star3{
+  left:21%;
+}
+
+.star21{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 81vh;
+  left:76%;
+}
+.star212{
+  left:78%;
+}
+.star213{
+  left:80%;
+}
+
+
+#bagest-div{
+  transition: all 3s;
+  animation: divFirst 4s alternate;
+
+}
+@keyframes divFirst{
+  0%{
+    transform: scale(1.1);
+
+  }
+  100%{
+    transform: scale(1);
+  }
+}
