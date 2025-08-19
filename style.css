@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    padding:0%;
+    margin: 0%;
+
+}
+body{
+    background:linear-gradient(90deg,rgba(0, 0, 255, 0.506),rgb(102, 0, 255)) ;
+    width: 100%;
+    height: 100vh;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    animation:page alternate 0.6s;
+
+}
+.div-main{
+    width:70%;
+    height: 70vh;
+    border: 5px solid rgb(245, 213, 213);
+    background-color:transparent;
+    border-radius: 10px;
+    background-color: rgba(175, 197, 197, 0.755);
+}
+#p-one{
+    position: absolute;
+    top: 5vh;
+    left: 20%;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+#p-two{
+    position: absolute;
+    top: 5vh;
+    left: 60%;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+.div-main-1{
+    background-color: rgb(108, 122, 169);
+    width: 50%;
+    height:68.5vh;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.div-main-{
+    background-color: rgb(0, 0, 3);
+    width: 40%;
+    height:68.5vh;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+
+}
+.img-one{
+    position:absolute;
+    top: 28vh;
+    left: 45%;
+    width:120px;
+    height: 18vh;
+
+
+
+}
+
+.First-grade{
+    position: absolute;
+    top: 25vh;
+    left: 25%;
+    font-size: 2em;
+
+}
+.Second-grade{
+    position: absolute;
+    top: 25vh;
+    left: 60%;
+    font-size: 2em;
+
+}
+button{
+    background-color: transparent;
+    width: 60px;
+    height: 6vh;
+    border:0.2px solid rgb(122, 6, 184);
+    border-radius: 4px;
+
+}
+
+
+/* From Uiverse.io by CristianMontoya98 */ 
+.btn ,.btn1{
+ width: 6.5em;
+ height: 2.3em;
+ margin: 0.5em;
+ background: rgb(135, 24, 186);
+ color: white;
+ border: none;
+ border-radius: 0.625em;
+ font-size: 20px;
+ font-weight: bold;
+ cursor: pointer;
+ position: relative;
+ z-index: 1;
+ overflow: hidden;
+}
+
+button:hover {
+ color: black;
+}
+
+button:after {
+ content: "";
+ background: white;
+ position: absolute;
+ z-index: -1;
+ left: -20%;
+ right: -20%;
+ top: 0;
+ bottom: 0;
+ transform: skewX(-45deg) scale(0, 1);
+ transition: all 0.5s;
+}
+
+button:hover:after {
+ transform: skewX(-45deg) scale(1, 1);
+ -webkit-transition: all 0.5s;
+ transition: all 0.5s;
+}
+
+.btn,.btn1 {
+    position: absolute;
+    top: 72vh;
+    left: 44%;
+}
+
+#div-one{
+    position: absolute;
+    top: 65vh;
+    left: 23%;
+    width: 10%;
+    height: 14vh;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: 800px;
+    border-radius: 12px;
+    color: white;
+    background-color: rgb(122, 6, 184);
+    text-align: center;
+}
+
+#div-two{
+    position: absolute;
+    top: 65vh;
+    left: 65%;
+    width: 10%;
+    height: 14vh;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: 800px;
+    border-radius: 12px;
+    color: white;
+    background-color: rgb(122, 6, 184);
+    text-align: center;
+}
+
+span{
+    font-size: 1.4em;
+    margin-top:px;
+
+}
+
+#h-one,#h-two{
+    color: white;
+    font-size: 3.4em;
+    font-weight: 400px;
+}
+
+    
+#love{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 70vh;
+    right: 28.5%;
+    animation: love 1.5s ease-in-out;
+    display: none;
+}
+
+#love1{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 70vh;
+    left:27%;
+    animation: love 1.5s ease-in-out;
+    display: none;
+}
+@keyframes love{
+    0%{
+        transform:scale(1.1);
+    }
+    50%{
+        transform: scale(40px);
+    }
+    99%{
+        transform: translateY(-200px);
+    }
+    100%{
+        display: none;
+    }
+}
+
+
+#sad, #good{
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50vh;
+    right: 27%;
+}
+#good{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50vh;
+    left:25%;
+}
